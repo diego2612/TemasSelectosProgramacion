@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasIA", "PruebasIA.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AproximarPi", "..\AproximarPi\AproximarPi.csproj", "{D892333B-1F2C-4E48-86DE-3B4544AAE8C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sumatorias", "..\Sumatorias\Sumatorias.csproj", "{3EAB8872-7B54-4E62-AF70-285B7F8B3C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathG", "..\MathG\MathG.csproj", "{E666B856-851C-4837-897D-E93D39742418}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D892333B-1F2C-4E48-86DE-3B4544AAE8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D892333B-1F2C-4E48-86DE-3B4544AAE8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D892333B-1F2C-4E48-86DE-3B4544AAE8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EAB8872-7B54-4E62-AF70-285B7F8B3C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EAB8872-7B54-4E62-AF70-285B7F8B3C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EAB8872-7B54-4E62-AF70-285B7F8B3C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EAB8872-7B54-4E62-AF70-285B7F8B3C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E666B856-851C-4837-897D-E93D39742418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E666B856-851C-4837-897D-E93D39742418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E666B856-851C-4837-897D-E93D39742418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E666B856-851C-4837-897D-E93D39742418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
