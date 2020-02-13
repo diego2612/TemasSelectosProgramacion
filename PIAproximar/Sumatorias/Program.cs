@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MathG;
 
 namespace Sumatorias
@@ -17,22 +13,19 @@ namespace Sumatorias
 
 
             double[] arreglo = new double[5] { 1,2,3,4,5};
-            double s = Statistics.Sum(arreglo);
+            double[] arreglo2 = new double[5] { 1, 2, 3, 4, 5 };
+            //Obtener la suma de los elementos del arreglo
+            double s = Statistics.Suma(arreglo);
+            //Obtiene el promedio
             double prom = s / args.Length;
-            Console.WriteLine("{ 0}", prom);
+            Console.WriteLine("Promedio: {0}", prom);
+            Console.WriteLine("Suma de arreglos {1}", 5);
             Console.ReadLine();
-            double suma = Statistics.Sum(arreglo);
-
         }
 
-        static double Suma(double[] input)
-        {
-            //Metodo para sumar los arreglos 
-            double SumaArreglos = Statistics.Sum(input);
-            return SumaArreglos;
-        }
 
         /*
+        Primero se probó el metodo dentro de Sumatorias, luego se exportó a la libreria. 
         static double Sum(double[] entrada)
         {
             double salida = 0;
