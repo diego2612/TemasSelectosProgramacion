@@ -24,15 +24,39 @@ namespace MathG
         /// Obtener promedio de un conjunto de datos
         /// </summary>
         /// <param name="Arreglo de datos"></param>
-        public double MediaAritmetica(double [] Datos)
+        public static double MediaAritmetica(double [] Datos)
         {
             double suma = 0;
-            for (int j = 0; j <= Datos.Length; j++)
+            for (int j = 0; j<Datos.Length; j++)
             {
                 suma = (Datos[j] + suma);
             }
             double media = suma / Datos.Length;
             return media;
         }
+        /// <summary>
+        /// Obtener promedio varianza muestral de un conjunto de datos
+        /// </summary>
+        /// <param name="Datos">arreglo</param>
+        /// <param name="promedio">promedio de los datos</param>
+        public double VarianzaS(double[] Datos)
+        {
+            double suma=0;
+            double varianza = 0;
+            for (int i = 0;i<Datos.Length;i++)
+            {
+                suma = suma + Math.Pow((Datos[i] - MediaAritmetica(Datos)), 2);
+            }
+            varianza = suma / Datos.Length;//Varianza muestral
+            return varianza;
+        }
+
+        public double DesviacionEstandarS(double[] Datos)
+        {
+            double desviacionEstandar = Math.Sqrt(VarianzaS(Datos));
+
+            return desviacionEstandar;
+        }
+
     }
 }

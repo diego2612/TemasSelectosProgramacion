@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathG", "..\MathG\MathG.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperaturaPromedio", "..\TemperaturaPromedio\TemperaturaPromedio.csproj", "{FD11719E-BA85-4F29-AF22-7707B5574136}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promedio", "..\Promedio\Promedio.csproj", "{AEECE854-4D5B-4501-BF03-89A16F199CA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FD11719E-BA85-4F29-AF22-7707B5574136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD11719E-BA85-4F29-AF22-7707B5574136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD11719E-BA85-4F29-AF22-7707B5574136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEECE854-4D5B-4501-BF03-89A16F199CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEECE854-4D5B-4501-BF03-89A16F199CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEECE854-4D5B-4501-BF03-89A16F199CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEECE854-4D5B-4501-BF03-89A16F199CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

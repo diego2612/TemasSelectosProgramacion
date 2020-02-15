@@ -16,8 +16,6 @@ namespace TemperaturaPromedio
            Console.WriteLine("Presiona Enter para abrir excel");
             Console.ReadLine();
             AbrirExcel();
-
-
         }
         public static void AbrirExcel()
         {
