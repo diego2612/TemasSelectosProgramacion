@@ -6,8 +6,22 @@ using System.Collections.Generic;
 namespace MathG
 {
     //A continuacion se presentan metodos aritméticos listos para usarse
-    class Aritmetica
+    public class Aritmetica
     {
+        ///<summary>
+        ///Suma de los elementos de un array dado "sum en matlab"
+        ///</summary>
+        ///<param name="entrada"> Un arreglo con valores numericos </param>
+
+        public static double Sum(double[] input)
+        {
+            double output = 0;
+            for (int i = 0; i < input.Length; i++)
+            {
+                output = output + input[i];
+            }
+            return output;
+        }
         ///<summary>
         ///Suma de dos arreglos "plus en matlab"
         ///</summary>
@@ -32,7 +46,7 @@ namespace MathG
         public double SumaAritmetica(double real1, double real2)
         {
             double[] numeros = new double[2]{ real1, real2};
-            double resultado = Statistics.Suma(numeros);
+            double resultado = Sum(numeros);
             return resultado;
         }
 
@@ -41,7 +55,7 @@ namespace MathG
         ///</summary>
         ///<param name = "VectorExponentes">Los exponentes del polinomio a derivar</param>
 
-        public double[] DerivadaNumerica(double[ ] VectorExponentes )
+        public double[] Diff(double[ ] VectorExponentes )
         {
             double[] VectorDerivada = new double[VectorExponentes.Length - 1];
             for (int i=0;i<=VectorExponentes.Length-1;i++)
@@ -66,20 +80,52 @@ namespace MathG
         }
 
         ///<summary>
-        ///Elevar los elementos de un arreglo a la potencia indicada
+        ///Elevar los elementos de un arreglo a un exponente entero
         /// </summary>
         /// <param name="ArregloElevar"></param>
         /// <param name="PotenciaElevar"></param>
         
-        public double[] PotenciarArreglo(double[] ArregloElevar, double PotenciaElevar)
+        public static double[] PowArreglo(double[] ArregloElevar, int PotenciaElevar)
         {
             double[] ArregloPotenciado = new double[ArregloElevar.Length];
 
-            for (int j=0;j<=ArregloElevar.Length;j++)
+            for (int j=0;j<ArregloElevar.Length;j++)
             {
-                ArregloPotenciado[j] = Math.Pow(ArregloElevar[j], PotenciaElevar);
+                ArregloPotenciado[j] = Power(ArregloElevar[j], PotenciaElevar);
             }
             return ArregloPotenciado;
         }
+
+        ///<summary>
+        ///Elevar un numero real a una potencia entera
+        /// </summary>
+        /// <param name="Numero real Elevar"></param>
+        /// <param name="PotenciaElevar"></param>
+        public static double Power(double input,int exp)
+        {
+            double output = 1 ;
+            for (int i=0;i<exp;i++)
+            {
+                output = input * input;
+            }
+            return output;
+        }
+        ///<summary>
+        ///Resta a cada elemento de un arreglo, un escalar
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="escalar"></param>
+        /// <returns name="Arreglo restado el escalar"></returns>
+        public static double[] Minus(double[] input, double escalar)
+        {
+            double[] output = new double[input.Length];
+            for (int i=0;i<input.Length;i++)
+            {
+                output[i]= input[i] - escalar;
+            }
+            return output;
+        }
+
+
     }
 }
