@@ -51,21 +51,6 @@ namespace MathG
         }
 
         ///<summary>
-        ///Diferencia y derivados aproximados "diff en matlab"
-        ///</summary>
-        ///<param name = "VectorExponentes">Los exponentes del polinomio a derivar</param>
-
-        public double[] Diff(double[ ] VectorExponentes )
-        {
-            double[] VectorDerivada = new double[VectorExponentes.Length - 1];
-            for (int i=0;i<=VectorExponentes.Length-1;i++)
-            {
-                VectorDerivada[i] =(VectorExponentes[i+1]-VectorExponentes[i]);
-            }
-            return VectorDerivada;
-        }
-
-        ///<summary>
         ///Producto de los elementos de un arreglo
         ///</summary>
         ///<param name="ArregloEntrada ">Entrada de arreglo  de tamaño n </param>
